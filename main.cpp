@@ -16,7 +16,7 @@ int main() {
     std::map<int, std::string> names = {{1, "one"}, {2, "two"}, {3, "three"}, {4, "four"}, {5, "five"}, {6, "six"}};
     std::ofstream out("results.csv");
     for (const auto &count : counts) {
-        out << names[count.first] << ":" << count.second << "\n";
+        out << names[count.first] << "," << count.second << "\n";
     }
     out.close();
 
